@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a0826;
+    color: #ffffff;
+}
+
+header.inicio {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    background: rgba(26, 8, 38, 0.9);
+}
+
+.barra-navegacion .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b57edc;
+}
+
+.barra-navegacion .enlaces-nav {
+    list-style: none;
+    display: flex;
+}
+
+.barra-navegacion .enlaces-nav li {
+    margin: 0 10px;
+}
+
+.barra-navegacion .enlaces-nav a {
+    text-decoration: none;
+    color: #b57edc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.barra-navegacion .enlaces-nav a:hover {
+    color: #d8b6ff;
+}
+
+.contenido-inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #d8b6ff;
+}
+
+.contenido-inicio p {
+    font-size: 1.2rem;
+    color: #b57edc;
+}
+
+.seccion {
+    padding: 40px 20px;
+    text-align: center;
+    background: #2e1047;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.sobre-mi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    background-color: #b57edc;
+}
+
+.imagen-perfil {
+    width: 150px;  
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.proyectos .lista-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyectos .proyecto {
+    max-width: 300px;
+    text-align: left;
+    background: #3e1a5a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.proyectos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.proyecto a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.proyecto a:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1a0826;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilos para la página de contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background: #2e1047;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.contacto h2 {
+    color: #d8b6ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+    color: #b57edc;
+    margin-bottom: 10px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    background: #3e1a5a;
+    color: white;
+}
+
+.contacto textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacto button {
+    background: #b57edc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contacto button:hover {
+    background: #d8b6ff;
+}
+
+.seccion p:last-child {
+    margin-bottom: 20px;
+}
+
+.lenguajes-lista {
+    list-style-type: none; 
+    padding: 0;
+    margin-top: 10px; 
+}
+
+.lenguajes-lista li {
+    margin-bottom: 8px; 
+}
+
+.seccion p:last-child {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px; 
+}
