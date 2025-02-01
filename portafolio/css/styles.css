@@ -224,3 +224,62 @@ footer {
 h2 {
     margin-top: 20px; 
 }
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para el submenú */
+.enlaces-nav li {
+    position: relative; /* Añade esto */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
+    right: 0; /* Alinea el submenú a la izquierda */
+    background: #3e1a5a;
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: #b57edc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.submenu a:hover {
+    color: #d8b6ff;
+}
+
+.enlaces-nav li:hover .submenu {
+    display: block;
+}
