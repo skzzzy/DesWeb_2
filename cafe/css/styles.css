@@ -185,11 +185,11 @@ footer {
 /* Ajustes para tabletas */
 @media (max-width: 768px) {
     .quienes-somos img {
-        width: 100%; /* Hace la imagen más grande */
-        max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+        width: 100%;
+        max-width: 400px;
     }
 
     .quienes-somos p {
-        font-size: 1.2rem; /* Reduce el tamaño del texto */
+        font-size: 1.2rem;
     }
 }
