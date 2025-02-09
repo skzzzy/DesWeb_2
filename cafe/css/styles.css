@@ -13,10 +13,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo img {
     height: 60px;
+}
+
+nav {
+    display: flex;
 }
 
 nav ul {
@@ -70,7 +75,6 @@ nav ul li a {
     height: 200px;
     object-fit: cover;
 }
-
 
 .testimonios {
     background-color: #d7b89c;
@@ -132,4 +136,60 @@ footer {
 .quienes-somos .redes-sociales img {
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 576px) {
+    .row-cols-2 > .col:last-child {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #8d6e63;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-active {
+        display: flex;
+    }
+}
+
+@media (min-width: 577px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Ajustes para tabletas */
+@media (max-width: 768px) {
+    .quienes-somos img {
+        width: 100%; /* Hace la imagen más grande */
+        max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    }
+
+    .quienes-somos p {
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    }
 }
